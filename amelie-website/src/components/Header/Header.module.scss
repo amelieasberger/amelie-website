@@ -2,14 +2,32 @@
 
 .container {
     background-color: $colorWhite;
-    box-shadow: 0 12px 12px -4px #1b1b1b;
+    box-shadow: 0 4px 4px -4px #949494;
     padding: 20px;
     position: relative;
     z-index: 2;
     display: flex;
     justify-content: space-between;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 .logo {
     width: 80px;
+}
+
+.name {
+    font-size: 14px;
+    margin-left: 8px;
+    line-height: 1;
+    border-left: 2px solid $background;
+    padding-left: 8px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: flex-end;
 }

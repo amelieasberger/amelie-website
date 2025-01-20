@@ -8,6 +8,7 @@
     align-items: center;
     gap: 30px;
     color: $colorWhite;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .image {
@@ -44,7 +45,7 @@
     
     background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
     background-position: center center;
-    animation: bg-spin 2s linear;
+    animation: bg-spin 2.5s linear;
     animation-iteration-count: 1;
 
     @keyframes bg-spin {

@@ -7,7 +7,6 @@ export const frontendSkills = [
     { name: 'Redux', value: 87 },
     { name: 'NextJS', value: 35 },
     { name: 'jQuery', value: 40 },
-    { name: 'KnockoutJS', value: 40 },
 ];
   
 export const backendSkills = [
