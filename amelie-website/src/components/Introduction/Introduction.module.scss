@@ -5,6 +5,8 @@
     padding: 40px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .image {
@@ -13,13 +15,52 @@
     border-radius: 100%;
 }
 
-.imageContainer {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
 .title {
     font-size: 40px;
     font-weight: bold;
+}
+
+.description {
+    font-size: 20px;
+}
+
+.circle {
+    display: grid;
+    place-content: center;
+    color: white;
+    text-shadow: 0 1px 0 #ffffff;
+    border-radius: 100%;
+    
+    --border-angle: 0turn; // For animation.
+    --main-bg: conic-gradient(
+        from var(--border-angle),
+        #fff0ff,
+        #fff0ff 5%,
+        #fff0ff 60%,
+        #ffdbfc 95%
+    );
+  
+    border: solid 5px transparent;
+    --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, #ffdbfc, rgb(255, 113, 231) 99%, transparent);
+    
+    background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
+    background-position: center center;
+    animation: bg-spin 2s linear;
+    animation-iteration-count: 1;
+
+    @keyframes bg-spin {
+        to {
+        --border-angle: 1turn;
+        }
+    }
+
+    &:hover {
+        animation-play-state: paused;
+    }
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
 }

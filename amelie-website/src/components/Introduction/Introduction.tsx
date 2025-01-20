@@ -8,9 +8,12 @@ export default function Introduction(): React.JSX.Element {
 
     return (
         <div className={styles.container}>
-            <div className={styles.imageContainer}>
+            <div className={styles.circle}>
                 <img src="assets/images/portrait.jpg" alt="image of Amelie" className={styles.image} />
-                <h1 className={styles.title}>{t('welcome')}</h1>
+            </div>
+            <div>
+                <h1 className={styles.title}>Amelie Asberger</h1>
+                <p className={styles.description}>{t('description')}</p>
             </div>
         </div>
     );
