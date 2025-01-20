@@ -6,7 +6,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
+    color: $colorWhite;
 }
 
 .image {
@@ -27,8 +28,6 @@
 .circle {
     display: grid;
     place-content: center;
-    color: white;
-    text-shadow: 0 1px 0 #ffffff;
     border-radius: 100%;
     
     --border-angle: 0turn; // For animation.
@@ -41,7 +40,7 @@
     );
   
     border: solid 5px transparent;
-    --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, #ffdbfc, rgb(255, 113, 231) 99%, transparent);
+    --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, #5c5c5c, rgb(63, 63, 63) 99%);
     
     background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
     background-position: center center;
@@ -50,12 +49,8 @@
 
     @keyframes bg-spin {
         to {
-        --border-angle: 1turn;
+            --border-angle: 1turn;
         }
-    }
-
-    &:hover {
-        animation-play-state: paused;
     }
 }
 
