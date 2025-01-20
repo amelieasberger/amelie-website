@@ -2,5 +2,13 @@
 
 .container {
     background-color: $background;
-    height: 600px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    max-height: 400px;
+    width: auto;
+    border-radius: 100%;
 }
