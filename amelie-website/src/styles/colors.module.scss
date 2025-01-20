@@ -1,0 +1,7 @@
+$background: hsl(300, 100%, 96%);
+$colorWhite: #ffff;
+
+:export {
+    background: $background;
+    colorWhite: $colorWhite;
+}
