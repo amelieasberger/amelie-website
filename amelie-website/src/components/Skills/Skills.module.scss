@@ -1,3 +1,26 @@
 .title {
     font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.chartContainer {
+    height: 300px;
+    width: 300px;
+}
+
+.container {
+    padding: 40px;
+    text-align: center;
+}
+
+.skillContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skillTitle {
+    margin-bottom: 20px;
+    font-size: 18px;
+    display: block;
 }

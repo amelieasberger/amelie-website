@@ -1,28 +1,28 @@
-export const frontendSkills = {
-    HTML: 90,
-    ['(S)CSS']: 85,
-    JS: 95,
-    TypeScript: 78,
-    React: 92,
-    Redux: 87,
-    NextJS: 35,
-    jQuery: 40,
-    KnockoutJS: 40,
-}
-
-export const backendSkills = {
-    PHP: 60,
-    PHPUnit: 40,
-    MySQL: 35,
-    Laminas: 60,
-}
-
-export const toolSkills = {
-    Git: 85,
-    PHPStorm: 85,
-    Bitbucket: 80,
-    Jira: 70,
-    Confluence: 65,
-    Gimp: 50,
-    AffinityPhoto: 50,
-}
+export const frontendSkills = [
+    { name: 'HTML', value: 90 },
+    { name: '(S)CSS', value: 85 },
+    { name: 'JS', value: 95 },
+    { name: 'TypeScript', value: 78 },
+    { name: 'React', value: 92 },
+    { name: 'Redux', value: 87 },
+    { name: 'NextJS', value: 35 },
+    { name: 'jQuery', value: 40 },
+    { name: 'KnockoutJS', value: 40 },
+];
+  
+export const backendSkills = [
+    { name: 'PHP', value: 60 },
+    { name: 'PHPUnit', value: 40 },
+    { name: 'MySQL', value: 35 },
+    { name: 'Laminas', value: 60 },
+  ];
+  
+export const toolSkills = [
+    { name: 'Git', value: 85 },
+    { name: 'PHPStorm', value: 85 },
+    { name: 'Bitbucket', value: 80 },
+    { name: 'Jira', value: 70 },
+    { name: 'Confluence', value: 65 },
+    { name: 'Gimp', value: 50 },
+    { name: 'AffinityPhoto', value: 50 },
+];
