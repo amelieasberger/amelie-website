@@ -1,3 +1,48 @@
 .container {
-    padding: 40px 20px;
+    padding: 40px;
+}
+
+.photographyContainer {
+    cursor: grab;
+    max-width: 700px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.imageContainer {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+
+.image {
+    object-fit: contain;
+    max-height: 450px;
+    border-radius: 5px;
+}
+
+.descriptionContainer {
+    max-width: 450px;
+    font-size: 15px;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.2;
+}
+
+.descriptionTitle {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }

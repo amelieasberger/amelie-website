@@ -28,5 +28,4 @@ function Home(): React.JSX.Element {
   );
 }
 
-
 export default appWithTranslation(Home);

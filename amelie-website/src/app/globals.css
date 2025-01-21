@@ -11,7 +11,22 @@
 } */
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    color: var(--foreground);
+    background: var(--background);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.swiper-pagination-bullet {
+    background: #ffffff !important;
+    width: 10px !important;
+    height: 10px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #ffffff !important;
+}
+
+.swiper-slide {
+    display: flex !important;
+    width: 100% !important;
 }

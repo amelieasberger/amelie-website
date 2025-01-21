@@ -30,17 +30,17 @@ export default function Feedback(): React.JSX.Element {
                         link="https://www.linkedin.com/in/patricia-wagner-b6b9b5195/"
                         feedbackText={t('feedbackPatricia')}
                     />
-                    <FeedbackTile
+                    {/* <FeedbackTile
                         isFemale={false}
                         name="Sebastian A. – ehem. stellv. Teamleiter Softwareentwicklung"
                         link="https://www.linkedin.com/in/sebastian-antosch/"
                         feedbackText={t('feedbackPatricia')}
-                    />
+                    /> */}
                     <FeedbackTile
                         isFemale={false}
                         name="Moritz D. – Professional Product Manager"
                         link="https://www.linkedin.com/in/moritz-dressler/"
-                        feedbackText={t('feedbackPatricia')}
+                        feedbackText={t('feedbackMoritz')}
                     />
             </div>
         </div>
