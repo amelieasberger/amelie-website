@@ -7,7 +7,7 @@ import { appWithTranslation } from 'next-i18next';
 import Skills from '@/components/Skills/Skills';
 import QuoteSection from '@/components/QuoteSection/QuoteSection';
 import Vita from '@/components/Vita/Vita';
-import Imprint from '@/components/Footer/Imprint/Imprint';
+import Footer from '@/components/Footer/Footer';
 
 function Home(): React.JSX.Element {
   return (
@@ -18,7 +18,7 @@ function Home(): React.JSX.Element {
         <Skills />
         {/* <QuoteSection /> */}
         <Vita />
-        <Imprint />
+        <Footer />
       </main>
     </div>
   );

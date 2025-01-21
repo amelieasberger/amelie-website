@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './Header.module.scss';
 import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
 
-
 export default function Header(): React.JSX.Element {
 
     return (
