@@ -1,14 +1,15 @@
 import { useTranslation } from 'react-i18next';
 import styles from './Skills.module.scss';
 import { frontendSkills, backendSkills, toolSkills } from '@/data/skills';
-import PieSkillChart from '../PieSkillChart/PieSkillChart';
+import PieSkillChart from './PieSkillChart/PieSkillChart';
+import SectionTitle from '../SectionTitle/SectionTitle';
 
 export default function Skills(): React.JSX.Element {
     const { t } = useTranslation('common');
 
     return (
         <div className={styles.container}>
-            <h2 className={styles.title}>{t('skillsTitle')}</h2>
+            <SectionTitle title={t('skillsTitle')} />
             <div className={styles.skillContainer}>
                 <div>
                     <span className={styles.skillTitle}>Frontend</span>

@@ -5,6 +5,7 @@ import '../../i18n';
 import { appWithTranslation } from 'next-i18next';
 import Skills from '@/components/Skills/Skills';
 import QuoteSection from '@/components/QuoteSection/QuoteSection';
+import Vita from '@/components/Vita/Vita';
 
 function Home(): React.JSX.Element {
   return (
@@ -13,7 +14,8 @@ function Home(): React.JSX.Element {
         <Header />
         <Introduction />
         <Skills />
-        <QuoteSection />
+        {/* <QuoteSection /> */}
+        <Vita />
       </main>
       <div className='h-20'></div>
     </div>
