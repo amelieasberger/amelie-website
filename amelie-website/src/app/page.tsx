@@ -5,7 +5,6 @@ import Introduction from '@/components/Introduction/Introduction';
 import '../../i18n';
 import { appWithTranslation } from 'next-i18next';
 import Skills from '@/components/Skills/Skills';
-import QuoteSection from '@/components/QuoteSection/QuoteSection';
 import Vita from '@/components/Vita/Vita';
 import Footer from '@/components/Footer/Footer';
 import Feedback from '@/components/Feedback/Feedback';
@@ -18,7 +17,6 @@ function Home(): React.JSX.Element {
         <Header />
         <Introduction />
         <Skills />
-        {/* <QuoteSection /> */}
         <Vita />
         <Feedback />
         <AboutMe />
