@@ -1,4 +1,4 @@
-@import '../../styles/colors.module.scss';
+@use '../../styles/colors.module.scss' as colors;
 
 $content-width: calc(40vw - 84px);
 $margin: 20px;
@@ -19,7 +19,7 @@ $color6: #aff1b6;
 
 .container {
     background: #f8f8f8;
-    // color: $colorWhite;
+    // color: colors.$colorWhite;
     padding: 40px;
 }
 
@@ -38,13 +38,14 @@ $color6: #aff1b6;
 }
 
 .event {
+    opacity: 0;
     margin-bottom: $spacing;
     position: relative;
     display: flex;
     border-radius: $bdrs;
     align-self: center;
     width: 50vw;
-    animation-delay: 3s;
+    animation-delay: 2s;
 
     &:nth-child(2n + 1) {
         flex-direction: row-reverse;
@@ -86,8 +87,34 @@ $color6: #aff1b6;
                 animation: fillLeft 2s forwards 4s ease-in-out;
             }
         }
+
+        animation-delay: 3s;
+
+        &:after {
+            background: $color4;
+        }
+
+        .date {
+            color: $color3;
+            background: $color4;
+        }
+
+        .icon {
+            background: $color3;
+            color: $color4;
+            
+            &:before,
+            &:after {
+                background: $color3;
+            }
+        }
+
+        .title {
+            color: $color4;
+        }
     }
 
+    // remove bottom line for last icon
     &:last-child {
         .icon {
             &:before {
@@ -138,8 +165,6 @@ $color6: #aff1b6;
     }
 }
 
-
-
 .title {
     font-size: 1.2rem;
     line-height: 1.4;
@@ -165,10 +190,6 @@ $color6: #aff1b6;
     padding: 40px;
     height: $circle-size;
     position: relative;
-
-    i {
-        font-size: $icon-size;
-    }
 
     &:before {
         content: "";
@@ -226,76 +247,6 @@ $color6: #aff1b6;
     white-space: initial;
 }
 
-.type2 {
-    animation-delay: 2s;
-
-    &:after {
-        background: $color4;
-    }
-
-    .date {
-        color: $color3;
-        background: $color4;
-    }
-
-    &:nth-child(2n + 1) {
-        .icon {
-            &:before,
-            &:after {
-                background: $color3;
-            }
-        }
-    }
-
-    .icon {
-        background: $color3;
-        color: $color4;
-        &:before,
-        &:after {
-            background: $color3;
-        }
-    }
-
-    .title {
-        color: $color4;
-    }
-}
-
-.type3 {
-    animation-delay: 3s;
-
-    &:after {
-        background: $color5;
-    }
-
-    .date {
-        color: $color6;
-        background-color: $color5;
-    }
-
-    &:nth-child(2n + 1) {
-        .icon {
-            &:before,
-            &:after {
-                background: $color6;
-            }
-        }
-    }
-
-    .icon {
-        background: $color6;
-        color: $color5;
-        &:before,
-        &:after {
-            background: $color6;
-        }
-    }
-
-    .title {
-        color: $color5;
-    }
-}
-
 @keyframes fillLeft {
 	100% {
 		right: 100%;
@@ -315,6 +266,7 @@ $color6: #aff1b6;
 }
 
 .animated {
+    opacity: 1;
     animation-duration: 1s;
     animation-fill-mode: both;
     -webkit-animation-duration: 1s;

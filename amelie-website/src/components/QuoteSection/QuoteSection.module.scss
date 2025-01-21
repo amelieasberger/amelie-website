@@ -1,7 +1,7 @@
-@import '../../styles/colors.module.scss';
+@use '../../styles/colors.module.scss' as colors;
 
 .container {
-    background-color: $background;
+    background-color: colors.$background;
 }
 
 .background {

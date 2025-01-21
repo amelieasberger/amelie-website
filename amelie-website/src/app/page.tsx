@@ -17,7 +17,6 @@ function Home(): React.JSX.Element {
         {/* <QuoteSection /> */}
         <Vita />
       </main>
-      <div className='h-20'></div>
     </div>
   );
 }

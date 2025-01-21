@@ -1,13 +1,13 @@
-@import '../../styles/colors.module.scss';
+@use '../../styles/colors.module.scss' as colors;
 
 .container {
-    background-color: $background;
+    background-color: colors.$background;
     padding: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
-    color: $colorWhite;
+    color: colors.$colorWhite;
     font-family: 'Times New Roman', Times, serif;
 }
 

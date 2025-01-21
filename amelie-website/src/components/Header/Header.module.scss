@@ -1,7 +1,7 @@
-@import '../../styles/colors.module.scss';
+@use '../../styles/colors.module.scss' as colors;
 
 .container {
-    background-color: $colorWhite;
+    background-color: colors.$colorWhite;
     box-shadow: 0 4px 4px -4px #949494;
     padding: 20px;
     position: relative;
@@ -21,7 +21,7 @@
     font-size: 14px;
     margin-left: 8px;
     line-height: 1;
-    border-left: 2px solid $background;
+    border-left: 2px solid colors.$background;
     padding-left: 8px;
     font-family: sans-serif;
     font-weight: bold;
