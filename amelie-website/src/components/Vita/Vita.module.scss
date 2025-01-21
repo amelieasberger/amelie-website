@@ -1,6 +1,5 @@
 @use '../../styles/colors.module.scss' as colors;
 
-$content-width: calc(40vw - 84px);
 $margin: 20px;
 $spacing: 20px;
 $bdrs: 6px;
@@ -8,24 +7,15 @@ $circle-size: 40px;
 $icon-size: 32px;
 $bdrs-icon: 100%;
 
-$color1: #9251ac;
-$color2: #f6a4ec;
-
-$color3: #87bbfe;
-$color4: #555ac0;
-
-$color5: #24b47e;
-$color6: #aff1b6;
-
 .container {
-    background: #f8f8f8;
-    // color: colors.$colorWhite;
-    padding: 40px;
+    background: colors.$colorLightGray;
+    padding: 40px 20px;
 }
 
 .bulletPointContainer {
     list-style: disc;
     margin-left: 20px;
+    margin-top: 10px;
     font-size: 14px;
 }
 
@@ -49,6 +39,7 @@ $color6: #aff1b6;
 
     &:nth-child(2n + 1) {
         flex-direction: row-reverse;
+        animation-delay: 1s;
 
         .date {
             border-radius: 0 $bdrs $bdrs 0;
@@ -57,60 +48,48 @@ $color6: #aff1b6;
         .content {
             border-radius: $bdrs 0 0 $bdrs;
         }
+        
+        .date {
+            color: colors.$colorLightBlue;
+            background: colors.$colorDarkBlue;
+        }
+
+        .title {
+            color: colors.$colorDarkBlue;
+        }
+        
+        &:after {
+            background: colors.$colorDarkBlue;
+        }
 
         .icon {
+            background: colors.$colorLightBlue;
+            color: colors.$colorDarkBlue;
+            
+            &:before,
+            &:after {
+                background: colors.$colorLightBlue;
+            }
+
             &:before {
-                content: "";
                 width: 2px;
                 height: 100%;
-                background: $color2;
-                position: absolute;
                 top: 0%;
                 left: 50%;
                 right: auto;
-                z-index: -1;
                 transform: translateX(-50%);
                 animation: fillTop 2s forwards 4s ease-in-out;
             }
 
             &:after {
-                content: "";
                 width: 100%;
                 height: 2px;
-                background: $color2;
-                position: absolute;
                 right: 0;
-                z-index: -1;
                 top: 50%;
                 left: auto;
                 transform: translateY(-50%);
                 animation: fillLeft 2s forwards 4s ease-in-out;
             }
-        }
-
-        animation-delay: 3s;
-
-        &:after {
-            background: $color4;
-        }
-
-        .date {
-            color: $color3;
-            background: $color4;
-        }
-
-        .icon {
-            background: $color3;
-            color: $color4;
-            
-            &:before,
-            &:after {
-                background: $color3;
-            }
-        }
-
-        .title {
-            color: $color4;
         }
     }
 
@@ -123,24 +102,18 @@ $color6: #aff1b6;
         }
     }
 
-    @media (max-width: 786px) {
+    @media (max-width: 1080px) {
         flex-direction: column;
         align-self: center;
+        width: 100%;
 
-        .content {
+        .content, 
+        .date {
             width: 100%;
         }
 
         .icon {
-            border-radius: $bdrs $bdrs 0 0;
-            width: 100%;
-            margin: 0;
-            box-shadow: none;
-
-            &:before,
-            &:after {
-                display: none;
-            }
+            display: none;
         }
 
         .date {
@@ -170,51 +143,43 @@ $color6: #aff1b6;
     line-height: 1.4;
     text-transform: uppercase;
     font-weight: 600;
-    color: $color1;
+    color: colors.$colorDarkViolet;
     letter-spacing: 1.5px;
 }
 
 .icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: $color1;
-    padding: $spacing;
     align-self: center;
     margin: 0 $spacing;
-    background: $color2;
+    background: colors.$colorLightViolet;
     border-radius: $bdrs-icon;
-    width: $circle-size;
-    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
-        0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
-    padding: 40px;
-    height: $circle-size;
+    box-shadow: 0 30px 60px -12px #32325d40, 0 18px 36px -18px #0000004d, 0 -12px 36px -8px #00000006;
+    padding: $circle-size;
     position: relative;
 
     &:before {
-        content: "";
         width: 2px;
         height: 100%;
-        background: $color2;
-        position: absolute;
         top: 0%;
-        z-index: -1;
         left: 50%;
         transform: translateX(-50%);
-        animation: fillTop 2s forwards 4s ease-in-out;
+        animation: fillTop 2s forwards 3s ease-in-out;
     }
 
     &:after {
-        content: "";
         width: 100%;
         height: 2px;
-        background: $color2;
-        position: absolute;
-        left: 0%;
-        z-index: -1;
         top: 50%;
+        left: 0%;
         transform: translateY(-50%);
-        animation: fillLeftOdd 2s forwards 4s ease-in-out;
+        animation: fillLeftOdd 2s forwards 3s ease-in-out;
+    }
+
+    &:before,
+    &:after {
+        content: "";
+        background: colors.$colorLightViolet;
+        position: absolute;
+        z-index: -1;
     }
 }
 
@@ -227,15 +192,15 @@ $color6: #aff1b6;
     box-shadow: 0 30px 60px -12px rgba(255, 255, 255, 0.25),
         0 18px 36px -18px rgba(255, 255, 255, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
     background: #fff;
-    width: $content-width;
+    width: calc(40vw - 84px);
     border-radius: 0 $bdrs $bdrs 0;
 }
 
 .date {
-    color: $color2;
+    color: colors.$colorLightViolet;
     font-size: 18px;
     font-weight: 600;
-    background: $color1;
+    background: colors.$colorDarkViolet;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -243,7 +208,7 @@ $color6: #aff1b6;
     padding: 0 $spacing;
     border-radius: $bdrs 0 0 $bdrs;
 
-    max-width: 130px;
+    width: 130px;
     white-space: initial;
 }
 
@@ -282,22 +247,22 @@ $color6: #aff1b6;
 // fade in content boxes
 @keyframes fadeInUp {
     from {
-        transform: translate3d(0,40px,0)
+        transform: translate3d(0, 40px, 0)
     }
 
     to {
-        transform: translate3d(0,0,0);
+        transform: translate3d(0, 0, 0);
         opacity: 1
     }
 }
 
 @-webkit-keyframes fadeInUp {
     from {
-        transform: translate3d(0,40px,0)
+        transform: translate3d(0, 40px, 0)
     }
 
     to {
-        transform: translate3d(0,0,0);
+        transform: translate3d(0, 0, 0);
         opacity: 1
     }
 }

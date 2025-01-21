@@ -1,3 +1,5 @@
+@use '../../styles/colors.module.scss' as colors;
+
 .title {
     font-size: 35px;
     margin-bottom: 30px;
@@ -10,14 +12,16 @@
 
 .container {
     padding: 40px;
-    margin-bottom: 50px;
     text-align: center;
+    background-color: colors.$background;
+    color: colors.$colorWhite;
 }
 
 .skillContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 50px;
 }
 
 .skillTitle {

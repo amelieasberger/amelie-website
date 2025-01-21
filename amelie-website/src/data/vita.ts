@@ -32,7 +32,7 @@ export const vitaDataDE = [
     },
     {
         date: '06/2018',
-        title: 'Betriebspraktikum IT-Abteilung',
+        title: 'Praktikum IT-Abteilung',
         company: 'Weltbild GmbH & Co. KG',
         description: [
             'Rasperry Pie Versuchsanordnung', 

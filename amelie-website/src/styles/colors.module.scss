@@ -1,7 +1,17 @@
 $background: #181818;
+$colorLightGray: #f8f8f8;
 $colorWhite: #ffff;
+$colorDarkViolet: #9251ac;
+$colorLightViolet: #f6a4ec;
+$colorLightBlue: #87bbfe;
+$colorDarkBlue: #555ac0;
 
 :export {
     background: $background;
     colorWhite: $colorWhite;
+    colorDarkViolet: $colorDarkViolet;
+    colorLightViolet: $colorLightBlue;
+    colorLightBlue: $colorLightBlue;
+    colorDarkBlue: $colorDarkBlue;
+    colorLightGray: $colorLightGray;
 }
