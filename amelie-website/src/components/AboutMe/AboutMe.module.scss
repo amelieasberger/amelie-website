@@ -1,5 +1,5 @@
 .container {
-    padding: 40px;
+    padding: 40px 20px;
 }
 
 .photographyContainer {
@@ -12,6 +12,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 
 .imageContainer {
