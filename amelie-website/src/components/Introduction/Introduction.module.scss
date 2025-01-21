@@ -8,6 +8,7 @@
     align-items: center;
     gap: 30px;
     font-family: monospace;
+    line-height: 1.5;
 }
 
 .image {
@@ -23,39 +24,4 @@
 
 .description {
     font-size: 20px;
-}
-
-.circle {
-    display: grid;
-    place-content: center;
-    border-radius: 100%;
-    
-    --border-angle: 0turn; // For animation.
-    --main-bg: conic-gradient(
-        from var(--border-angle),
-        #fff0ff,
-        #fff0ff 5%,
-        #fff0ff 60%,
-        #ffdbfc 95%
-    );
-  
-    border: solid 5px transparent;
-    --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, #5c5c5c, rgb(63, 63, 63) 99%);
-    
-    background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
-    background-position: center center;
-    animation: bg-spin 2.5s linear;
-    animation-iteration-count: 1;
-
-    @keyframes bg-spin {
-        to {
-            --border-angle: 1turn;
-        }
-    }
-}
-
-@property --border-angle {
-  syntax: "<angle>";
-  inherits: true;
-  initial-value: 0turn;
 }

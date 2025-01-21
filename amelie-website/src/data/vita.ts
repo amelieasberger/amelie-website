@@ -4,7 +4,7 @@ export const vitaDataDE = [
         title: 'Professional Softwareentwicklerin',
         company: 'CHECK24 Vergleichsportal Camper GmbH',
         description: [
-            'Verantwortung über den Frontend-Bereich',
+            'Ansprechpartnerin für den Frontend-Bereich bei Camper',
             'Weiterentwicklung der Frontend-Architektur',
             'Refactoring von Legacy-Codebases',
             'Release Verantwortung',

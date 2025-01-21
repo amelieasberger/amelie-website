@@ -1,13 +1,8 @@
 @use '../../styles/colors.module.scss' as colors;
 
-.title {
-    font-size: 35px;
-    margin-bottom: 30px;
-}
-
-.chartContainer {
-    height: 300px;
-    width: 300px;
+.title.title {
+    font-size: 22px;
+    color: colors.$colorLightViolet;
 }
 
 .container {
@@ -15,17 +10,31 @@
     text-align: center;
     background-color: colors.$background;
     color: colors.$colorWhite;
-}
-
-.skillContainer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 5em;
 }
 
-.skillTitle {
-    margin-bottom: 20px;
-    font-size: 18px;
-    display: block;
+.chartContainer {
+    font-weight: bold;
+    font-family: monospace;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.advanced {
+    font-size: 20px;
+}
+
+.medium {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.low {
+    margin-top: 10px;
+    font-size: 14px;
 }

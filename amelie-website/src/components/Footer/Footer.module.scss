@@ -7,5 +7,18 @@
     display: flex;
     justify-content: center;
     font-weight: bold;
-    color: #949494;
+
+    a {
+        all: unset;
+        cursor: pointer;
+        
+        &:link,
+        &:visited {
+            color: colors.$colorMediumGray;
+        }
+
+        &:hover {
+            color: colors.$colorDarkGray;
+        }
+    }
 }

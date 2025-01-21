@@ -62,7 +62,6 @@ export default function Vita(): React.JSX.Element {
                     );
                 })}
             </div>
-            
         </div>
     );
 }

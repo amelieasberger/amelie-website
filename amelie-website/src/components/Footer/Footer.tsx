@@ -7,9 +7,9 @@ export default function Footer(): React.JSX.Element {
 
     return (
         <div className={styles.container}>
+            <Link href="/">Home</Link>
             <Link href="/imprint">{t('imprintTitle')}</Link>
             <Link href="/privacyPolicy">{t('privacy')}</Link>
-            <Link href="/">Home</Link>
         </div>
     );
 };
