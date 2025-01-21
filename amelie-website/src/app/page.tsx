@@ -1,4 +1,5 @@
 'use client';
+import '../styles/reset.scss';
 import Header from '@/components/Header/Header';
 import Introduction from '@/components/Introduction/Introduction';
 import '../../i18n';
