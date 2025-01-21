@@ -8,7 +8,6 @@ $icon-size: 32px;
 $bdrs-icon: 100%;
 
 .container {
-    background: colors.$colorLightGray;
     padding: 40px 20px;
 }
 
@@ -26,6 +25,7 @@ $bdrs-icon: 100%;
 	margin: $margin auto;
 	position: relative;
     z-index: 1;
+    color: black;
 }
 
 .event {
@@ -111,6 +111,7 @@ $bdrs-icon: 100%;
         .content, 
         .date {
             width: 100%;
+            border-radius: 0;
         }
 
         .icon {
@@ -118,7 +119,6 @@ $bdrs-icon: 100%;
         }
 
         .date {
-            border-radius: 0;
             padding: $spacing;
         }
 
@@ -126,8 +126,13 @@ $bdrs-icon: 100%;
             flex-direction: column;
             align-self: center;
 
+            .content, 
             .date {
+                width: 100%;
                 border-radius: 0;
+            }
+
+            .date {
                 padding: $spacing;
             }
 

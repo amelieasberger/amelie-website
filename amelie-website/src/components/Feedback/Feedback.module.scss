@@ -1,0 +1,40 @@
+@use '../../styles/colors.module.scss' as colors;
+
+.container {
+    padding: 40px 20px;
+    // background-color: colors.$colorWhite;
+}
+
+.feedback {
+    padding: 20px;
+    // display: flex;
+    max-width: 500px;
+    line-height: 1.5;
+    // background-color: colors.$colorLightGray;
+    background-color: colors.$colorWhite;
+    border-radius: 5px;
+}
+
+.feedbackContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name {
+    margin-bottom: 6px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.content {
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    flex: 0 0 auto;
+}

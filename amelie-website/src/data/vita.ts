@@ -31,6 +31,12 @@ export const vitaDataDE = [
         technologies: ['HTML', 'SCSS', 'PHP', 'Laminas', 'SQL', 'jQuery', 'KnockoutJS'],
     },
     {
+        date: '2019',
+        title: 'Schulabschluss Mittlere Reife',
+        description: [],
+        company: 'Agnes-Bernauer-Realschule Augsburg',
+    },
+    {
         date: '06/2018',
         title: 'Praktikum IT-Abteilung',
         company: 'Weltbild GmbH & Co. KG',
@@ -41,12 +47,6 @@ export const vitaDataDE = [
             'Einführung in Service Management und Service Desk',
         ],
         technologies: ['HTML'],
-    },
-    {
-        date: '2019',
-        title: 'Mittlere Reife',
-        description: [],
-        company: 'Agnes-Bernauer-Realschule Augsburg',
     },
 ];
 
@@ -82,6 +82,12 @@ export const vitaDataEN = [
         technologies: ['HTML', 'SCSS', 'PHP', 'Laminas', 'SQL', 'jQuery', 'KnockoutJS'],
     },
     {
+        date: 'graduated in 2019',
+        title: 'Secondary School Certificate (equivalent to GCSE)',
+        description: [],
+        company: 'Agnes-Bernauer-Realschule Augsburg',
+    },
+    {
         date: 'June 2018',
         title: 'Internship IT department',
         company: 'Weltbild GmbH & Co. KG',
@@ -92,11 +98,5 @@ export const vitaDataEN = [
             'introduction to service management and service desk'
         ],
         technologies: ['HTML'],
-    },
-    {
-        date: 'graduated in 2019',
-        title: 'Secondary School Certificate (equivalent to GCSE)',
-        description: [],
-        company: 'Agnes-Bernauer-Realschule Augsburg',
     },
 ];

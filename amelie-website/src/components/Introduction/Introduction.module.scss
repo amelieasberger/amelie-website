@@ -1,7 +1,4 @@
-@use '../../styles/colors.module.scss' as colors;
-
 .container {
-    background-color: colors.$colorLightGray;
     padding: 40px;
     display: flex;
     justify-content: center;
@@ -9,6 +6,10 @@
     gap: 30px;
     font-family: monospace;
     line-height: 1.5;
+
+    @media (max-width: 500px) {
+        flex-direction: column;
+    }
 }
 
 .image {

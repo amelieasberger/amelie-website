@@ -10,11 +10,14 @@
     "contact": "Kontakt: E-Mail: amelie@asberger.dev",
     "responsibilityTitle": "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:",
     "copyright": "Urheberrecht",
-    "copyrightText": "Als Diensteanbieter bin ich gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG bin ich jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.",
+    "copyrightText": "Die Inhalte und Werke auf dieser Website unterliegen dem deutschen Urheberrecht. Jede Vervielfältigung, Bearbeitung, Verbreitung oder andere Verwertung außerhalb der gesetzlich erlaubten Grenzen ist nur mit vorheriger schriftlicher Zustimmung des jeweiligen Rechteinhabers gestattet. Downloads und Kopien dieser Website dürfen ausschließlich für private und nicht kommerzielle Zwecke genutzt werden. Werden Inhalte auf dieser Website bereitgestellt, die nicht vom Betreiber erstellt wurden, bleiben die Urheberrechte Dritter gewahrt. Diese Inhalte werden entsprechend gekennzeichnet. Sollten dennoch Verstöße gegen das Urheberrecht auffallen, wird um einen Hinweis gebeten, damit entsprechende Inhalte schnellstmöglich entfernt werden können.",
     "liabilityContent": "Haftung für Inhalte",
     "liabilityContentText": "Als Diensteanbieter bin ich gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG bin ich jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.",
     "liabilityLinks": "Haftung für Links",
     "liabilityLinksText": "Meine Website enthält Links zu externen Websites Dritter, auf deren Inhalte ich keinen Einfluss habe. Deshalb kann ich für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.",
+    "sources": "Quellen",
+    "iconSource": "Icons (Kollegenfeedback, Startseite), es wurden Anpassungen an den SVG's vorgenommen: ",
+    "logoSource": "\"AA-Logo\" im Header: Amelie Asberger",
     "privacy": "Datenschutz",
     "privacyTitle": "Datenschutzerklärung",
     "privacyResponsibility": "Verantwortliche Stelle im Sinne der Datenschutzgesetze:",
@@ -27,5 +30,8 @@
     "rights": "Ihre Rechte",
     "rightsText": "Da ich keine personenbezogenen Daten erhebe, haben Sie keine Rechte bezüglich der Verarbeitung solcher Daten. Sollten Sie dennoch Fragen dazu haben, können Sie mich gerne kontaktieren.",
     "privacyChanges": "Änderungen dieser Datenschutzerklärung",
-    "privacyChangesText": "Ich behalte mir vor, diese Datenschutzerklärung bei Bedarf zu aktualisieren, wenn sich mein Umgang mit Daten ändert oder gesetzliche Anforderungen angepasst werden."
+    "privacyChangesText": "Ich behalte mir vor, diese Datenschutzerklärung bei Bedarf zu aktualisieren, wenn sich mein Umgang mit Daten ändert oder gesetzliche Anforderungen angepasst werden.",
+    "feedbackTitle": "Das sagen ehemalige Kollegen über mich",
+    "feedbackPatricia": "Ich habe 2 Jahre lang eng mit Amelie zusammengearbeitet. Wenn ich Amelies Arbeitsweise in 3 Worten zusammenfassen müsste: Proaktiv, effizient, qualitätvoll. Die Arbeit mit Amelie hat stets Spaß gemacht, war geprägt von Produktivität, offener, teamübergreifender Kommunikation sowie stets konstruktivem und souveränem Umgang mit Herausforderungen und großem Arbeitsaufkommen. Wir konnten viele gemeinsame Erfolge feiern und ich bin mir sicher, dass sie dazu in einem anderen Team auch künftig beitragen wird!",
+    "aboutMeTitle": "Persönliche Interessen"
 }

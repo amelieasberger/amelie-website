@@ -3,6 +3,18 @@ import styles from './Skills.module.scss';
 import { advancedSkills, mediumSkills, lowSkills, advancedToolSkills, mediumToolSkills } from '@/data/skills';
 import SectionTitle from '../SectionTitle/SectionTitle';
 
+function Skill({ skills, style }: { skills: Array<string>; style: string }): React.JSX.Element {
+    return (
+        <div className={styles.skillContainer}>
+            {skills.map((skill) => {
+                return (
+                    <div key={skill} className={style}>{skill}</div>
+                );
+            })}
+        </div>
+    );
+}
+
 export default function Skills(): React.JSX.Element {
     const { t } = useTranslation('common');
 
@@ -10,44 +22,14 @@ export default function Skills(): React.JSX.Element {
         <div className={styles.container}>
             <div>
                 <SectionTitle title={t('skillsTitle')} additionalClasses={styles.title} />
-                <div className={styles.chartContainer}>
-                    {advancedSkills.map((frontendSkill) => {
-                        return (
-                            <div key={frontendSkill} className={styles.advanced}>{frontendSkill}</div>
-                        );
-                    })}
-                </div>
-                <div className={styles.chartContainer}>
-                    {mediumSkills.map((frontendSkill) => {
-                        return (
-                            <div key={frontendSkill} className={styles.medium}>{frontendSkill}</div>
-                        );
-                    })}
-                </div>
-                <div className={styles.chartContainer}>
-                    {lowSkills.map((frontendSkill) => {
-                        return (
-                            <div key={frontendSkill} className={styles.low}>{frontendSkill}</div>
-                        );
-                    })}
-                </div>
+                <Skill skills={advancedSkills} style={styles.advanced} />
+                <Skill skills={mediumSkills} style={styles.medium} />
+                <Skill skills={lowSkills} style={styles.low} />
             </div>
             <div>
                 <SectionTitle title={t('toolsTitle')} additionalClasses={styles.title} />
-                <div className={styles.chartContainer}>
-                    {advancedToolSkills.map((frontendSkill) => {
-                        return (
-                            <div key={frontendSkill} className={styles.advanced}>{frontendSkill}</div>
-                        );
-                    })}
-                </div>
-                <div className={styles.chartContainer}>
-                    {mediumToolSkills.map((frontendSkill) => {
-                        return (
-                            <div key={frontendSkill} className={styles.medium}>{frontendSkill}</div>
-                        );
-                    })}
-                </div>
+                <Skill skills={advancedToolSkills} style={styles.advanced} />
+                <Skill skills={mediumToolSkills} style={styles.medium} />
             </div>
         </div>
     );

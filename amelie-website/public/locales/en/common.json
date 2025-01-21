@@ -10,11 +10,14 @@
     "contact": "Contact: Email: amelie@asberger.dev",
     "responsibilityTitle": "Responsible for content according to Section 55(2) RStV:",
     "copyright": "Copyright",
-    "copyrightText": "The content and works created by the website operator on this website are subject to German copyright law. Contributions by third parties are marked as such. Duplication, processing, distribution, and any form of utilization beyond the limits of copyright law require the written consent of the author or creator.",
+    "copyrightText": "The content and works on this website are subject to German copyright law. Any duplication, processing, distribution or other use outside the legally permitted limits is only permitted with the prior written consent of the respective copyright holder. Downloads and copies of this website may only be used for private and non-commercial purposes. If content is made available on this website that was not created by the operator, the copyrights of third parties remain protected. This content is marked accordingly. However, should any infringements of copyright become apparent, please notify us so that the relevant content can be removed as quickly as possible.",
     "liabilityContent": "Liability for Content",
     "liabilityContentText": "As a service provider, I am responsible for my own content on these pages in accordance with Section 7(1) TMG and general laws. However, according to Sections 8 to 10 TMG, I am not obligated to monitor transmitted or stored external information or to search for circumstances indicating illegal activity.",
     "liabilityLinks": "Liability for Links",
     "liabilityLinksText": "My website contains links to external websites of third parties, over whose contents I have no influence. Therefore, I cannot assume any liability for these external contents. The respective provider or operator of the pages is always responsible for the contents of the linked pages.",
+    "sources": "Sources",
+    "iconSource": "Icons (colleague feedback, start page), adjustments have been made to the SVG's: ",
+    "logoSource": "\"AA-Logo\" in page header: Amelie Asberger",
     "privacy": "Privacy Policy",
     "privacyTitle": "Privacy Policy",
     "privacyResponsibility": "The responsible party within the meaning of data protection laws is:",
@@ -27,5 +30,8 @@
     "rights": "Your Rights",
     "rightsText": "Since I do not collect personal data, you do not have rights regarding the processing of such data. However, if you have any questions, feel free to contact me.",
     "privacyChanges": "Changes to This Privacy Policy",
-    "privacyChangesText": "I reserve the right to update this privacy policy if my data handling practices change or if legal requirements are amended."
+    "privacyChangesText": "I reserve the right to update this privacy policy if my data handling practices change or if legal requirements are amended.",
+    "feedbackTitle": "What former colleagues say about me",
+    "feedbackPatricia": "I have worked closely with Amelie for 2 years. If I had to summarize Amelie's way of working in 3 words: proactive, efficient, high quality. Working with Amelie was always fun, characterized by productivity, open, cross-team communication and always dealing constructively and confidently with challenges and large workloads. We were able to celebrate many successes together and I am sure that she will continue to contribute to this in another team in the future!",
+    "aboutMeTitle": "hobbies"
 }

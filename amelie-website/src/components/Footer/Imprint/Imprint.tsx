@@ -38,6 +38,11 @@ export default function Imprint(): React.JSX.Element {
                 <p className={styles.subtitle}>{t('liabilityLinks')}</p>
                 <p>{t('liabilityLinksText')}</p>
             </div>
+            <div>
+                <p className={styles.subtitle}>{t('sources')}</p>
+                <div>{t('iconSource')}<a href="https://www.svgrepo.com/page/licensing/#CC%20Attribution" target="_blank" rel="noopener noreferrer">svgrepo.com</a></div>
+                <div>{t('logoSource')}</div>
+            </div>
         </div>
     );
 };

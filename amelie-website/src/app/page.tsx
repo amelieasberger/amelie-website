@@ -8,6 +8,8 @@ import Skills from '@/components/Skills/Skills';
 import QuoteSection from '@/components/QuoteSection/QuoteSection';
 import Vita from '@/components/Vita/Vita';
 import Footer from '@/components/Footer/Footer';
+import Feedback from '@/components/Feedback/Feedback';
+import AboutMe from '@/components/AboutMe/AboutMe';
 
 function Home(): React.JSX.Element {
   return (
@@ -18,6 +20,8 @@ function Home(): React.JSX.Element {
         <Skills />
         {/* <QuoteSection /> */}
         <Vita />
+        <Feedback />
+        <AboutMe />
         <Footer />
       </main>
     </div>
