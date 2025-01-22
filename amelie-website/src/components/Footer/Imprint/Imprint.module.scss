@@ -1,8 +1,8 @@
 .container {
-    margin: 40px 20px;
+    background-color: white;
+    padding: 40px 20px;
     display: grid;
     gap: 50px;
-    max-width: 800px;
     line-height: 1.5;
 }
 
@@ -15,4 +15,13 @@
     font-weight: bold;
     font-size: 18px;
     margin-bottom: 10px;
+}
+
+.textContainer {
+    max-width: 900px;
+}
+
+.sourceList {
+    list-style: disc;
+    margin-left: 20px;
 }

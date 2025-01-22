@@ -7,8 +7,12 @@ import { appWithTranslation } from 'next-i18next';
 import Skills from '@/components/Skills/Skills';
 import Vita from '@/components/Vita/Vita';
 import Footer from '@/components/Footer/Footer';
-import Feedback from '@/components/Feedback/Feedback';
 import AboutMe from '@/components/AboutMe/AboutMe';
+import dynamic from 'next/dynamic';
+import { isMobile } from 'react-device-detect';
+
+// to prevent ssr errors, the MobileFeedback component is only imported for mobile
+const FeedbackBlock = dynamic(() => isMobile ? import('@/components/Feedback/MobileFeedback') : import('@/components/Feedback/Feedback'), { ssr: false });
 
 function Home(): React.JSX.Element {
   return (
@@ -18,7 +22,7 @@ function Home(): React.JSX.Element {
         <Introduction />
         <Skills />
         <Vita />
-        <Feedback />
+        <FeedbackBlock />
         <AboutMe />
         <Footer />
       </main>

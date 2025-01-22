@@ -17,23 +17,23 @@ export default function Privacy(): React.JSX.Element {
                 </p>
                 <p>{t('contact')}</p>
             </div>
-            <div>
+            <div className={styles.textContainer}>
                 <p className={styles.subtitle}>{t('personalData')}</p>
                 <p>{t('personalDataText')}</p>
             </div>
-            <div>
+            <div className={styles.textContainer}>
                 <p className={styles.subtitle}>{t('cookies')}</p>
                 <p>{t('cookieText')}</p>
             </div>
-            <div>
+            <div className={styles.textContainer}>
                 <p className={styles.subtitle}>{t('dataTransfer')}</p>
                 <p>{t('dataTransferText')}</p>
             </div>
-            <div>
+            <div className={styles.textContainer}>
                 <p className={styles.subtitle}>{t('rights')}</p>
                 <p>{t('rightsText')}</p>
             </div>
-            <div>
+            <div className={styles.textContainer}>
                 <p className={styles.subtitle}>{t('privacyChanges')}</p>
                 <p>{t('privacyChangesText')}</p>
             </div>

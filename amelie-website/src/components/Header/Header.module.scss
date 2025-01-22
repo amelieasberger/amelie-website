@@ -30,4 +30,16 @@
 .logoContainer {
     display: flex;
     align-items: flex-end;
+
+    cursor: pointer;
+    text-decoration: none;
+    
+    &:link,
+    &:visited {
+        color: black;
+    }
+
+    &:hover {
+        color: black;
+    }
 }

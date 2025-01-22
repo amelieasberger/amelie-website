@@ -26,22 +26,28 @@ export default function Imprint(): React.JSX.Element {
                     <span>{t('country')}</span>
                 </p>
             </div>
-            <div>
+            <div className={styles.textContainer}>
                 <p className={styles.subtitle}>{t('copyright')}</p>
                 <p>{t('copyrightText')}</p>
             </div>
-            <div>
+            <div className={styles.textContainer}>
                 <p className={styles.subtitle}>{t('liabilityContent')}</p>
                 <p>{t('liabilityContentText')}</p>
             </div>
-            <div>
+            <div className={styles.textContainer}>
                 <p className={styles.subtitle}>{t('liabilityLinks')}</p>
                 <p>{t('liabilityLinksText')}</p>
             </div>
-            <div>
+            <div className={styles.textContainer}>
                 <p className={styles.subtitle}>{t('sources')}</p>
-                <div>{t('iconSource')}<a href="https://www.svgrepo.com/page/licensing/#CC%20Attribution" target="_blank" rel="noopener noreferrer">svgrepo.com</a></div>
-                <div>{t('logoSource')}</div>
+                <ul className={styles.sourceList}>
+                    <li>
+                        {t('iconSource')}
+                        <a href="https://www.svgrepo.com/page/licensing/#CC%20Attribution" target="_blank" rel="noopener noreferrer">svgrepo.com</a>
+                    </li>
+                    <li>{t('logoSource')}</li>
+                    <li>{t('imageSource')}</li>
+                </ul>
             </div>
         </div>
     );

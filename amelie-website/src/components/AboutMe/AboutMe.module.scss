@@ -2,9 +2,14 @@
     padding: 40px 20px;
 }
 
+.swiperSlide {
+    display: flex !important;
+    width: 100% !important;
+}
+
 .photographyContainer {
     cursor: grab;
-    max-width: 700px;
+    max-width: 600px;
 }
 
 .content {
@@ -25,18 +30,21 @@
 
 .image {
     object-fit: contain;
-    max-height: 450px;
+    max-height: 400px;
     border-radius: 5px;
 }
 
 .descriptionContainer {
-    max-width: 450px;
     font-size: 15px;
     gap: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     line-height: 1.2;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-height: fit-content;
 }
 
 .descriptionTitle {
@@ -46,4 +54,8 @@
     display: flex;
     align-items: center;
     gap: 8px;
+}
+
+.text {
+    max-width: 500px;
 }

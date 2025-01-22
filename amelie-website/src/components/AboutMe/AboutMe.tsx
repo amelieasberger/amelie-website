@@ -18,7 +18,7 @@ function AboutMeDescription({ title, text, icon }: { title: string; text: string
                 {icon}
                 {title}
             </div>
-            <p>{text}</p>
+            <p className={styles.text}>{text}</p>
         </div>
     );
 }
@@ -43,7 +43,7 @@ export default function AboutMe(): React.JSX.Element {
                     >
                         {photographyList.map((path) => {
                             return (
-                                <SwiperSlide key={path}>
+                                <SwiperSlide key={path} className={styles.swiperSlide}>
                                     <div className={styles.imageContainer}>
                                         <img className={styles.image} src={path} alt="photography taken by Amelie Asberger" />
                                     </div>

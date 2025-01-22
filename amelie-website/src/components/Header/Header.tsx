@@ -6,10 +6,10 @@ export default function Header(): React.JSX.Element {
 
     return (
         <div className={styles.container}>
-            <div className={styles.logoContainer}>
+            <a className={styles.logoContainer} href="/">
                 <img src="assets/icons/AALogo.png" alt="AA initials logo" className={styles.logo} />
                 <p className={styles.name}>Amelie Asberger</p>
-            </div>
+            </a>
             <LanguageSwitcher />
         </div>
     );
