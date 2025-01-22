@@ -17,7 +17,8 @@ export const mediumSkills = [
 export const lowSkills = [
     'MySQL',
     'NextJS',
-    'Knockout.js'
+    'Knockout.js',
+    'AngularJS'
 ]
 
 export const advancedToolSkills = [
@@ -28,8 +29,9 @@ export const advancedToolSkills = [
 ]
 
 export const mediumToolSkills = [
-    'Visual Studio Code',
+    'VS Code',
     'Confluence',
     'Gimp',
     'AffinityPhoto',
+    'MS Office',
 ]

@@ -2,6 +2,7 @@
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     margin-bottom: 40px;
+    padding: 0 20px;
 }
 
 .contactText {
@@ -13,6 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
