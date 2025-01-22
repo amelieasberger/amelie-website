@@ -49,3 +49,10 @@
 .icon {
     flex: 0 0 auto;
 }
+
+.nameContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}

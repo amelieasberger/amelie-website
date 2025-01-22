@@ -18,8 +18,12 @@ export function FeedbackTile({ isFemale, name, link, feedbackText }: { isFemale?
             <div className={styles.feedback}>
                 <div className={styles.name}>
                     <div className={styles.icon}>{isFemale ? <WomanIcon /> : <ManIcon />}</div>
-                    <span>{name}</span>
-                    <a href={link} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <div className={styles.nameContainer}>
+                        <span>{name}</span>
+                        <a href={link} target="_blank" rel="noopener noreferrer">
+                            <img src="assets/images/linkedin.png" alt="LinkedIn Logo" />
+                        </a>
+                    </div>
                 </div>
                 {feedbackText}
             </div>

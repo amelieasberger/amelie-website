@@ -17,6 +17,7 @@
     "liabilityLinksText": "My website contains links to external websites of third parties, over whose contents I have no influence. Therefore, I cannot assume any liability for these external contents. The respective provider or operator of the pages is always responsible for the contents of the linked pages.",
     "sources": "Sources",
     "iconSource": "Icons (colleague feedback, personal interests: start page), adjustments have been made to the SVG's: ",
+    "linkedInIconSource": "LinkedIn logo (colleague feedback): ",
     "logoSource": "\"AA-Logo\" in page header: Amelie Asberger",
     "imageSource": "Italy, Water and Cat picture: Amelie Asberger",
     "privacy": "Privacy Policy",
@@ -45,5 +46,7 @@
     "aboutMePhotoTitle": "Capturing moments through the lens",
     "aboutMePhotoText": "With my Canon EOS 100D, I seize the small and big wonders of life. Photography allows me to freeze moments and tell unique stories.",
     "aboutMeTravelTitle": "A passion for travel and discovery",
-    "aboutMeTravelText": "Exploring new places fills me with joy and inspiration. Last year, my adventures took me to Thailand, Spain, Italy and the Netherlands – and my suitcase is already waiting for the next journey!"
+    "aboutMeTravelText": "Exploring new places fills me with joy and inspiration. Last year, my adventures took me to Thailand, Spain, Italy and the Netherlands – and my suitcase is already waiting for the next journey!",
+    "contactText": "I look forward to exciting opportunities and interesting projects.",
+    "contactSubtext": "I’m excited to hear from you!"
 }

@@ -43,7 +43,23 @@ export default function Imprint(): React.JSX.Element {
                 <ul className={styles.sourceList}>
                     <li>
                         {t('iconSource')}
-                        <a href="https://www.svgrepo.com/page/licensing/#CC%20Attribution" target="_blank" rel="noopener noreferrer">svgrepo.com</a>
+                        <a 
+                            href="https://www.svgrepo.com/page/licensing/#CC%20Attribution" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            svgrepo.com
+                        </a>
+                    </li>
+                    <li>
+                        {t('linkedInIconSource')}
+                        <a 
+                            href="https://www.flaticon.com/free-icons/linkedin" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            Linkedin icons created by Freepik - Flaticon
+                        </a>
                     </li>
                     <li>{t('logoSource')}</li>
                     <li>{t('imageSource')}</li>

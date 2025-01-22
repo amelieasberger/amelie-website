@@ -17,6 +17,7 @@
     "liabilityLinksText": "Meine Website enthält Links zu externen Websites Dritter, auf deren Inhalte ich keinen Einfluss habe. Deshalb kann ich für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.",
     "sources": "Quellen",
     "iconSource": "Icons (Kollegenfeedback, Persönliche Interessen: Startseite), es wurden Anpassungen an den SVG's vorgenommen: ",
+    "linkedInIconSource": "LinkedIn Logo (Kollegenfeedback): ",
     "logoSource": "\"AA-Logo\" im Header: Amelie Asberger",
     "imageSource": "Italien, See und Katzen Fotos: Amelie Asberger (Model: meine Katze Maja)",
     "privacy": "Datenschutz",
@@ -45,5 +46,7 @@
     "aboutMePhotoTitle": "Momente durch die Linse festhalten",
     "aboutMePhotoText": "Mit meiner Canon EOS 100D halte ich die kleinen und großen Wunder des Lebens fest. Die Fotografie gibt mir die Möglichkeit, Augenblicke einzufangen und Geschichten zu erzählen.",
     "aboutMeTravelTitle": "Reiselust und Entdeckung",
-    "aboutMeTravelText": "Das Erkunden neuer Orte erfüllt mich mit Freude und Inspiration. Letztes Jahr führten mich meine Reisen nach Thailand, Spanien, Italien und in die Niederlande – und mein Koffer wartet schon auf das nächste Abenteuer!"
+    "aboutMeTravelText": "Das Erkunden neuer Orte erfüllt mich mit Freude und Inspiration. Letztes Jahr führten mich meine Reisen nach Thailand, Spanien, Italien und in die Niederlande – und mein Koffer wartet schon auf das nächste Abenteuer!",
+    "contactText": "Ich freue mich auf interessante Angebote und spannende Projekte.",
+    "contactSubtext": "Kontaktieren Sie mich gerne!"
 }
