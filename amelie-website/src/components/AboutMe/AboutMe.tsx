@@ -26,8 +26,8 @@ function AboutMeDescription({ title, text, icon }: { title: string; text: string
 export default function AboutMe(): React.JSX.Element {
     const { t } = useTranslation('common');
     const photographyList = [
-        'assets/images/italy.png',
         'assets/images/water.jpg',
+        'assets/images/italy.png',
         'assets/images/cat.jpg',
     ];
 
