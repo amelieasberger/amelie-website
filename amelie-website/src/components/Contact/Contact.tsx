@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import styles from './Contact.module.scss';
-import Image from 'next/image';
 
 export default function Contact(): React.JSX.Element {
     const { t } = useTranslation('common');
@@ -24,7 +23,7 @@ export default function Contact(): React.JSX.Element {
                     className={`${styles.button} ${styles.linkedInButton}`} 
                     target="_blank" rel="noopener noreferrer"
                 >
-                    <Image src="assets/images/linkedin.png" alt="LinkedIn Logo" />
+                    <img src="assets/images/linkedin.png" alt="LinkedIn Logo" />
                     LinkedIn
                 </a>
             </div>
