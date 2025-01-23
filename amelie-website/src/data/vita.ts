@@ -6,8 +6,7 @@ export const vitaDataDE = [
         description: [
             'Ansprechpartnerin für den Frontend-Bereich bei Camper',
             'Weiterentwicklung der Frontend-Architektur',
-            'Refactoring von Legacy-Codebases',
-            'Release Verantwortung',
+            'Release Verantwortung, Refactorings und Code Reviews',
         ],
         technologies: ['React', 'Redux', 'TypeScript'],
     },
@@ -18,7 +17,6 @@ export const vitaDataDE = [
         description: [
             'Weiterentwicklung der Frontend-Architektur',
             'SEO und Pagespeed Optimierungen',
-            'Refactorings und Code Reviews',
             'Testing mit PHPUnit und Karma/Jasmine',
         ],
         technologies: ['React', 'Redux', 'SCSS', 'KnockoutJS'],

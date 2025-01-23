@@ -1,14 +1,18 @@
+$colorBlack: #000000;
 $background: #252525;
 $colorLightGray: #f8f8f8;
 $colorMediumGray: #949494;
 $colorDarkGray: #424242;
 $colorWhite: #ffff;
-$colorDarkViolet: #9251ac;
-$colorLightViolet: #f6a4ec;
-$colorLightBlue: #87bbfe;
-$colorDarkBlue: #555ac0;
+$colorDarkViolet: #441752;
+$colorLightViolet: #EFB6C8;
+$colorAliceBlue: #ecf9ff;
+$colorLightBlue: #79D7BE;
+$colorDarkBlue: #2E5077;
+$shadowColor: #dbdbdb;
 
 :export {
+    colorBlack: $colorBlack;
     background: $background;
     colorWhite: $colorWhite;
     colorDarkViolet: $colorDarkViolet;
@@ -18,4 +22,5 @@ $colorDarkBlue: #555ac0;
     colorLightGray: $colorLightGray;
     colorMediumGray: $colorMediumGray;
     colorDarkGray: $colorDarkGray;
+    colorAliceBlue: $colorAliceBlue;
 }

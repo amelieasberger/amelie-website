@@ -15,9 +15,4 @@ export const feedbacks = [
         link: "https://www.linkedin.com/in/arthur-eichmann-ba0658200/",
         token: "feedbackArthur"
     },
-    {
-        name: "Sebastian A. – ehem. stellv. Teamleiter Softwareentwicklung",
-        link: "https://www.linkedin.com/in/sebastian-antosch/",
-        token: "feedbackSebastian"
-    },
 ];

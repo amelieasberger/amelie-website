@@ -2,7 +2,7 @@
 
 .container {
     background-color: colors.$colorWhite;
-    box-shadow: 0 4px 4px -4px #949494;
+    box-shadow: 0 4px 4px -4px colors.$colorMediumGray;
     padding: 20px;
     position: relative;
     z-index: 2;
@@ -35,11 +35,8 @@
     text-decoration: none;
     
     &:link,
-    &:visited {
-        color: black;
-    }
-
+    &:visited,
     &:hover {
-        color: black;
+        color: colors.$colorBlack;
     }
 }
