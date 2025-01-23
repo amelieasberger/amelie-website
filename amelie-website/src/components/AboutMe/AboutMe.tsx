@@ -9,6 +9,7 @@ import TravelIcon from '../Icons/TravelIcon';
 import CameraIcon from '../Icons/CameraIcon';
 import PaintIcon from '../Icons/PaintIcon';
 import LaptopIcon from '../Icons/LaptopIcon';
+import Image from 'next/image';
 
 function AboutMeDescription({ title, text, icon }: { title: string; text: string, icon: React.JSX.Element }): React.JSX.Element {
     
@@ -45,7 +46,7 @@ export default function AboutMe(): React.JSX.Element {
                             return (
                                 <SwiperSlide key={path} className={styles.swiperSlide}>
                                     <div className={styles.imageContainer}>
-                                        <img className={styles.image} src={path} alt="photography taken by Amelie Asberger" />
+                                        <Image className={styles.image} src={path} alt="photography taken by Amelie Asberger" />
                                     </div>
                                 </SwiperSlide>
                             );

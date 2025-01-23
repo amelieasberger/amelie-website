@@ -12,6 +12,8 @@ export default function Vita(): React.JSX.Element {
     const elementRef = useRef<HTMLDivElement>(null);
   
     useEffect(() => {
+      const currentRef = elementRef.current;
+
       const observer = new IntersectionObserver(
         ([entry]) => {
             if (entry.isIntersecting) {
@@ -23,13 +25,13 @@ export default function Vita(): React.JSX.Element {
         }
       );
   
-      if (elementRef.current) {
-        observer.observe(elementRef.current);
+      if (currentRef) {
+        observer.observe(currentRef);
       }
   
       return () => {
-        if (elementRef.current) {
-          observer.unobserve(elementRef.current);
+        if (currentRef) {
+          observer.unobserve(currentRef);
         }
       };
     }, []);
