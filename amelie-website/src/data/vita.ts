@@ -1,6 +1,6 @@
 export const vitaDataDE = [
     {
-        date: '04/2023 - 01/2025',
+        date: '04/2023 – 01/2025',
         title: 'Professional Softwareentwicklerin',
         company: 'CHECK24 Vergleichsportal Camper GmbH',
         description: [
@@ -40,8 +40,7 @@ export const vitaDataDE = [
         company: 'Weltbild GmbH & Co. KG',
         description: [
             'Rasperry Pie Versuchsanordnung', 
-            'Prototyp Erstellung',
-            'Erstellen einer HTML-Website',
+            'Erstellung Prototyp und HTML-Website',
             'Einführung in Service Management und Service Desk',
         ],
         technologies: ['HTML'],
@@ -91,8 +90,7 @@ export const vitaDataEN = [
         company: 'Weltbild GmbH & Co. KG',
         description: [
             'Rasperry Pie test setup', 
-            'prototype creation',
-            'creation of an HTML website', 
+            'creation of prototype and HTML website', 
             'introduction to service management and service desk'
         ],
         technologies: ['HTML'],
