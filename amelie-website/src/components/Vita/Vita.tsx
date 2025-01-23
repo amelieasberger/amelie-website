@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import styles from './Vita.module.scss';
 import { vitaDataDE, vitaDataEN } from '@/data/vita';
 import SectionTitle from '../SectionTitle/SectionTitle';
-import { useEffect, useRef, useState } from 'react';
+import { useRef } from 'react';
 
   
 export default function Vita(): React.JSX.Element {
