@@ -8,34 +8,8 @@ import { useEffect, useRef, useState } from 'react';
 export default function Vita(): React.JSX.Element {
     const { i18n, t } = useTranslation('common');
     const vitaData = i18n.language === 'en' ? vitaDataEN : vitaDataDE;
-    const [isVisible, setIsVisible] = useState(false);
     const elementRef = useRef<HTMLDivElement>(null);
   
-    useEffect(() => {
-      const currentRef = elementRef.current;
-
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-            if (entry.isIntersecting) {
-                setIsVisible(true);
-            }
-        },
-        {
-          threshold: 0.2,
-        }
-      );
-  
-      if (currentRef) {
-        observer.observe(currentRef);
-      }
-  
-      return () => {
-        if (currentRef) {
-          observer.unobserve(currentRef);
-        }
-      };
-    }, []);
-
     return (
         <div className={styles.container}>
             <SectionTitle title={t('vitaTitle')} />
@@ -43,7 +17,7 @@ export default function Vita(): React.JSX.Element {
                 {vitaData.map((vitaPoint) => {
                     return (
                         <div 
-                            className={`${styles.event} ${isVisible ? styles.animated : ''} ${isVisible ? styles.fadeInUp : ''}`}
+                            className={`${styles.event} ${styles.fadeInUp}`}
                             key={vitaPoint.title}
                         >
                             <div className={styles.icon}>

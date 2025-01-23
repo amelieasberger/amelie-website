@@ -5,23 +5,26 @@ $borderRadius: 6px;
 $iconSize: 32px;
 $boxShadow: 0 2px 10px 0px colors.$shadowColor;
 
-@mixin icon-line($direction, $size, $animationName, $animationDelay, $color) {
+@mixin icon-line($direction, $animationName, $animationDelay, $color) {
     $animation: $animationName 2s forwards $animationDelay ease-in-out;
     content: "";
     position: absolute;
-    z-index: -1;
     background: $color;
   
     @if $direction == vertical {
         width: 2px;
         height: 100%;
         left: 50%;
+        top: 0;
+        right: auto;
         transform: translateX(-50%);
         animation: $animation;
     } @else if $direction == horizontal {
         width: 100%;
         height: 2px;
         top: 50%;
+        right: 0;
+        left: auto;
         transform: translateY(-50%);
         animation: $animation;
     }
@@ -65,8 +68,9 @@ $boxShadow: 0 2px 10px 0px colors.$shadowColor;
         }
     }
 
-    @media (max-width: 1080px) {
-        flex-direction: column;
+    // important is used here to override styles for nth-child(2n + 1) without duplicating this block
+    @media (max-width: 900px) {
+        flex-direction: column !important;
         width: 100%;
 
         .content, 
@@ -75,12 +79,12 @@ $boxShadow: 0 2px 10px 0px colors.$shadowColor;
         }
 
         .content {
-            border-radius: 0px 0px 5px 5px;
+            border-radius: 0 0 $borderRadius $borderRadius !important;
         }
 
         .date {
             padding: $spacing;
-            border-radius: 5px 5px 0px 0px;
+            border-radius: $borderRadius $borderRadius 0 0 !important;
         }
 
         .icon {
@@ -89,6 +93,7 @@ $boxShadow: 0 2px 10px 0px colors.$shadowColor;
     }
 }
 
+// every second child should be reversed and should have different colors
 .event:nth-child(2n + 1) {
     flex-direction: row-reverse;
     animation-delay: 1s;
@@ -97,6 +102,7 @@ $boxShadow: 0 2px 10px 0px colors.$shadowColor;
         background: colors.$colorDarkBlue;
     }
 
+    // reverse border radius
     .date {
         border-radius: 0 $borderRadius $borderRadius 0;
     }
@@ -118,40 +124,11 @@ $boxShadow: 0 2px 10px 0px colors.$shadowColor;
         background: colors.$colorLightBlue;
 
         &:before {
-            top: 0;
-            right: auto;
-            @include icon-line(vertical, 100%, fillTop, 4s, colors.$colorLightBlue);
+            @include icon-line(vertical, fillTop, 2s, colors.$colorLightBlue);
         }
 
         &:after {
-            right: 0;
-            left: auto;
-            @include icon-line(horizontal, 100%, fillLeft, 4s, colors.$colorLightBlue);
-        }
-    }
-
-    @media (max-width: 1080px) {
-        flex-direction: column;
-
-        .content, 
-        .date {
-            width: 100%;
-        }
-
-        .content {
-            width: 100%;
-            border-radius: 0;
-            border-radius: 0px 0px 5px 5px;
-        }
-
-        .date {
-            padding: $spacing;
-            border-radius: 5px 5px 0px 0px;
-        }
-
-        .icon {
-            border-radius: $borderRadius $borderRadius 0 0;
-            margin: 0;
+            @include icon-line(horizontal, fillLeft, 3s, colors.$colorLightBlue);
         }
     }
 }
@@ -171,16 +148,16 @@ $boxShadow: 0 2px 10px 0px colors.$shadowColor;
     margin: 0 $spacing;
     background: colors.$colorLightViolet;
     border-radius: 100%;
-    box-shadow: 0 30px 60px -12px #32325d40, 0 18px 36px -18px #0000004d, 0 -12px 36px -8px #00000006;
+    box-shadow: 0 4px 6px colors.$shadowColor, 0 1px 3px colors.$shadowColor;
     padding: $iconSize;
     position: relative;
 
     &:before {
-        @include icon-line(vertical, 100%, fillTop, 3s, colors.$colorLightViolet);
+        @include icon-line(vertical, fillTop, 2s, colors.$colorLightViolet);
     }
 
     &:after {
-        @include icon-line(horizontal, 100%, fillLeftOdd, 3s, colors.$colorLightViolet);
+        @include icon-line(horizontal, fillLeftOdd, 2s, colors.$colorLightViolet);
     }
 }
 
@@ -212,15 +189,11 @@ $boxShadow: 0 2px 10px 0px colors.$shadowColor;
     z-index: 1;
 }
 
-.animated {
-    opacity: 1;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-}
-
 .fadeInUp {
     opacity: 0;
     animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
 }
 
 // animation for lines
