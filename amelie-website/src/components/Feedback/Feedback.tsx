@@ -32,7 +32,7 @@ export function FeedbackTile({ isFemale, name, link, feedbackText }: { isFemale?
 }
 
 export default function Feedback(): React.JSX.Element {
-    const { t } = useTranslation('common');
+    const { i18n, t } = useTranslation('common');
     const [ currentSlide, setCurrentSlide ] = useState(0);
     const prevButtonClass = 'swiper-prev-button';
     const nextButtonClass = 'swiper-next-button';
@@ -57,11 +57,13 @@ export default function Feedback(): React.JSX.Element {
                     onSlideChange={handleSlideChange}
                 >
                     {feedbacks.map((feedback) => {
+                        const nameText = i18n.language === 'en' && feedback.nameEn ? feedback.nameEn : feedback.name;
+
                         return (
                             <SwiperSlide key={feedback.token}>
                                 <FeedbackTile
                                     isFemale={feedback.female}
-                                    name={feedback.name}
+                                    name={nameText}
                                     link={feedback.link}
                                     feedbackText={t(feedback.token)}
                                 />
