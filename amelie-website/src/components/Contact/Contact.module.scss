@@ -21,7 +21,6 @@
 }
 
 .button {
-    display: inline-block;
     padding: 15px 30px;
     font-size: 16px;
     color: colors.$colorDarkGray;
@@ -30,19 +29,11 @@
     transition: background-color 0.3s ease;
     background-color: colors.$colorWhite;
     border: 1px solid colors.$colorMediumGray;
-
-    &:hover {
-        background-color: colors.$colorAliceBlue;
-    }
-}
-
-.linkedInButton {
     display: flex;
     align-items: center;
     gap: 10px;
 
-    img {
-        width: 15px;
-        height: 15px;
+    &:hover {
+        background-color: colors.$colorAliceBlue;
     }
 }

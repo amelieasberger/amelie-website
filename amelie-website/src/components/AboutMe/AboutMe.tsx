@@ -5,17 +5,17 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/scss';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
-import TravelIcon from '../Icons/TravelIcon';
-import CameraIcon from '../Icons/CameraIcon';
-import PaintIcon from '../Icons/PaintIcon';
-import LaptopIcon from '../Icons/LaptopIcon';
+import { MdOutlineColorLens } from 'react-icons/md';
+import { RiCamera3Line } from 'react-icons/ri';
+import { LuTicketsPlane } from 'react-icons/lu';
+import { FaLaptopCode } from 'react-icons/fa';
 
 function AboutMeDescription({ title, text, icon }: { title: string; text: string, icon: React.JSX.Element }): React.JSX.Element {
     
     return (
         <div className={styles.description}>
             <div className={styles.descriptionTitle}>
-                {icon}
+                <span className={styles.icon}>{icon}</span>
                 {title}
             </div>
             <p className={styles.text}>{text}</p>
@@ -56,22 +56,22 @@ export default function AboutMe(): React.JSX.Element {
                     <AboutMeDescription 
                         title={t('aboutMeProgrammingTitle')} 
                         text={t('aboutMeProgrammingText')}
-                        icon={<LaptopIcon />}
+                        icon={<FaLaptopCode size="24px" color="#252525" />}
                     />
                     <AboutMeDescription 
                         title={t('aboutMeCreativityTitle')} 
                         text={t('aboutMeCreativityText')}
-                        icon={<PaintIcon />}
+                        icon={<MdOutlineColorLens size="24px" color="#252525" />}
                     />
                     <AboutMeDescription 
                         title={t('aboutMePhotoTitle')}
                         text={t('aboutMePhotoText')}
-                        icon={<CameraIcon />}
+                        icon={<RiCamera3Line size="24px" color="#252525" />}
                     />
                     <AboutMeDescription 
                         title={t('aboutMeTravelTitle')} 
                         text={t('aboutMeTravelText')}
-                        icon={<TravelIcon />}
+                        icon={<LuTicketsPlane size="24px" color="#252525" />}
                     />
                </div>
             </div>

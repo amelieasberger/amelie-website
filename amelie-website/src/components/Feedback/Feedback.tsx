@@ -11,6 +11,7 @@ import { Navigation } from 'swiper/modules';
 import SliderNavigation from './SliderNavigation/SliderNavigation';
 import { useState } from 'react';
 import { feedbacks } from '@/data/feedbacks';
+import { SiLinkedin } from 'react-icons/si';
 
 export function FeedbackTile({ isFemale, name, link, feedbackText }: { isFemale?: boolean; name: string; link: string; feedbackText: string }): React.JSX.Element {
     return (
@@ -20,8 +21,8 @@ export function FeedbackTile({ isFemale, name, link, feedbackText }: { isFemale?
                     <div className={styles.icon}>{isFemale ? <WomanIcon /> : <ManIcon />}</div>
                     <div className={styles.nameContainer}>
                         <span>{name}</span>
-                        <a href={link} target="_blank" rel="noopener noreferrer">
-                            <img src="assets/images/linkedin.png" alt="LinkedIn Logo" />
+                        <a href={link} target="_blank" rel="noopener noreferrer" className={styles.icon}>
+                            <SiLinkedin size="30px" color='#0077b7' />
                         </a>
                     </div>
                 </div>

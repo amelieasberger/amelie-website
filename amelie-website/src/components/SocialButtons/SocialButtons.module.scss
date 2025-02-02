@@ -1,0 +1,26 @@
+@use '../../styles/colors.module.scss' as colors;
+
+.container {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+
+    @media (max-width: 500px) {
+        justify-content: center;
+    }
+}
+
+.button {
+    padding: 0 10px;
+    border-radius: 6px;
+    border: 1px solid colors.$colorMediumGray;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: colors.$colorDarkGray;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: colors.$colorWhite;
+}
