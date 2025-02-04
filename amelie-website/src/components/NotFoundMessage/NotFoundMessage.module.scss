@@ -24,6 +24,12 @@
     min-width: 300px;
     max-width: fit-content;
     background-repeat: no-repeat;
+
+    @media (max-width: 500px) {
+        height: 300px;
+        min-width: 175px;
+        background-size: cover;
+    }
 }
 
 .button {
