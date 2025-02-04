@@ -9,7 +9,7 @@ export default function NotFoundMessage(): React.JSX.Element {
         <div className={styles.pageContainer}>
             <Header />
             <div className={styles.container}>
-                <h1 className={styles.title}>Sorry, this page can't be found. <br></br> But you found Maja!</h1>
+                <h1 className={styles.title}>Sorry, this page can&apos;t be found. <br></br> But you found Maja!</h1>
                 <div className={styles.image} />
                 <Link className={styles.button} href="/">Go back to Home</Link>
             </div>
