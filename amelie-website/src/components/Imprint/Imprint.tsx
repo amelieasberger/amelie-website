@@ -51,16 +51,6 @@ export default function Imprint(): React.JSX.Element {
                             svgrepo.com
                         </a>
                     </li>
-                    <li>
-                        {t('linkedInIconSource')}
-                        <a 
-                            href="https://www.flaticon.com/free-icons/linkedin" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                        >
-                            Linkedin icons created by Freepik - Flaticon
-                        </a>
-                    </li>
                     <li>{t('logoSource')}</li>
                     <li>{t('imageSource')}</li>
                 </ul>

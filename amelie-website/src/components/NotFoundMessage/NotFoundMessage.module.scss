@@ -1,0 +1,45 @@
+@use '../../styles/colors.module.scss' as colors;
+
+.pageContainer {
+    height: -webkit-fill-available;
+}
+
+.title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 40px;
+    text-align: center;
+    line-height: 2;
+    font-weight: normal;
+}
+
+.container {
+    justify-items: center;
+    margin-top: 40px;
+    height: -webkit-fill-available;
+}
+
+.image {
+    background-image: url('../../../public/assets/images/miau.png');
+    height: 500px;
+    min-width: 300px;
+    max-width: fit-content;
+    background-repeat: no-repeat;
+}
+
+.button {
+    padding: 15px 30px;
+    font-size: 16px;
+    color: colors.$colorDarkGray;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    background-color: colors.$colorWhite;
+    border: 1px solid colors.$colorMediumGray;
+    margin-top: 40px;
+    font-weight: bold;
+    display: block;
+
+    &:hover {
+        background-color: colors.$colorAliceBlue;
+    }
+}
