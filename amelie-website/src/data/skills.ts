@@ -24,14 +24,19 @@ export const lowSkills = [
 export const advancedToolSkills = [
     'Git',
     'Bitbucket',
-    'PHPStorm',
     'Jira',
+    'PHPStorm',
 ]
 
 export const mediumToolSkills = [
-    'VS Code',
+    'VS-Code',
     'Confluence',
     'Gimp',
-    'AffinityPhoto',
     'MS Office',
+]
+
+export const lowToolSkills = [
+    'UXPin',
+    'Canva',
+    'Adobe Photoshop',
 ]

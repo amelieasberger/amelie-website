@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import styles from './Skills.module.scss';
-import { advancedSkills, mediumSkills, lowSkills, advancedToolSkills, mediumToolSkills } from '@/data/skills';
+import { advancedSkills, mediumSkills, lowSkills, advancedToolSkills, mediumToolSkills, lowToolSkills } from '@/data/skills';
 import SectionTitle from '../SectionTitle/SectionTitle';
 
 function Skill({ skills, style }: { skills: Array<string>; style: string }): React.JSX.Element {
@@ -30,6 +30,7 @@ export default function Skills(): React.JSX.Element {
                 <SectionTitle title={t('toolsTitle')} additionalClasses={styles.title} />
                 <Skill skills={advancedToolSkills} style={styles.advanced} />
                 <Skill skills={mediumToolSkills} style={styles.medium} />
+                <Skill skills={lowToolSkills} style={styles.low} />
             </div>
         </div>
     );
